@@ -8,32 +8,31 @@ body {
 
 /* navbar */
 nav {
+  overflow: hidden;
+  background-color: white;
   width: 100%;
   height: 100px;
   font-family: 'Limelight', cursive;
   font-weight: 900;
-  overflow: hidden;
-  background-color: white;
 }
 
 nav #logo {
+  float: left;
+  margin-left: 200px;
+  line-height: 100px;
+  background-color: white;
   text-decoration: none;
   font-size: 30px;
   color: #a9a685;
-  float: left;
-  line-height: 100px;
-  margin-left: 200px;
-  background-color: white;
 }
 
 nav ul {
+  display: block;
   float: right;
-  display: inline-block;
-  vertical-align: middle;
   height: 100px;
-  padding: 0px;
   margin: 0px;
   margin-right: 200px;
+  padding: 0px;
 }
 
 .helper {
@@ -43,16 +42,16 @@ nav ul {
 }
 
 nav li {
-  list-style-type: none;
   display: inline-block;
-  vertical-align: middle;
   padding: 10px;
+  vertical-align: middle;
+  list-style-type: none;
 }
 
 nav .menu {
+  display: block;
   text-decoration: none;
   color: #a9a685;
-  display: block;
 }
 
 nav li:hover {
@@ -68,40 +67,37 @@ nav .menu:hover {
 #header {
   width: 100%;
   height: 600px;
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/header1.jpg);
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   color: white;
   font-family: 'Lato', sans-serif;
-}
-
-h1 {
-  font-weight: 900;
-  font-size: 100px;
-  text-align: center;
-}
-
-#header {
   font-weight: 300;
   font-size: 30px;
   text-align: center;
 }
 
+#header p:first-child {
+  font-weight: 900;
+  font-size: 100px;
+  text-align: center;
+}
+
 /* header info */
 #header_container {
-  width: 1200px;
   display: block;
+  width: 1200px;
   margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
 }
 
 .header_info {
+  float: left;
   width: 300px;
   padding: 50px 20px;
   font-family: 'Lato', sans-serif;
-  float: left;
 }
 
 .header_pic {
@@ -111,13 +107,226 @@ h1 {
 }
 
 .header_content {
-  text-align: center;
   height: 200px;
   padding: 20px;
   background-color: #ff9541;
   color: white;
+  text-align: center;
 }
 
 .header_content:hover {
   background-color: #a9a685;
+}
+
+/* chatbot */
+
+#chatbot-icon {
+  position: fixed;
+  top: 600px;
+  left: 1400px;
+  width: 60px;
+}
+
+#chatbot {
+  display: inline-block;
+  position: fixed;
+  top: 60px;
+  left: 1110px;
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  background: linear-gradient(#ff9541, white);
+  overflow: hidden;
+}
+
+#color-change {
+  display: block;
+  float:right;
+  margin: 0;
+  padding-top: 15px;
+  color: #6c6c6c;
+}
+
+#color-change:hover {
+  color: black;
+}
+
+#close {
+  display: block;
+  float:right;
+  margin: 0;
+  padding: 15px;
+  color: #6c6c6c;
+}
+
+#close:hover {
+  color: black;
+}
+
+#chatbot-header {
+  width: 270px;
+  height: 100px;
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+
+#chatbot-header-info {
+  display: block;
+  float: left;
+  width: 190px;
+}
+#chatbot-header-info p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+#chatbot-header-info p:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#chatbot-header-info p:nth-child(2) {
+  font-weight: 700;
+}
+
+#chatbot-header img {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+#chat-container {
+  width: 330px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.chatbox {
+  height: 380px;
+  padding: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.bubble {
+  margin: 5px 0;
+  display: inline-block;
+  max-width: 300px;
+  font-size: 14px;
+  position: relative;
+}
+
+.friend-bubble {
+  background-color: #a9a685;
+  border-radius: 14px 14px 14px 0;
+  padding: 7px 15px 7px 15px;
+  float: left;
+  clear: both;
+}
+
+.friend-bubble button {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.friend-bubble button:hover {
+  background-color: black;
+  color: white;
+}
+
+.my-bubble {
+  background-color: #d5d5d5;
+  border-radius: 14px 14px 0px 14px;
+  padding: 7px 15px 7px 15px;
+  float: right;
+  clear: both;
+}
+
+/* text box */
+
+.text-box {
+  width: 320px;
+  background-color: white;
+  float: left;
+}
+
+.text-box textarea {
+  float: left;
+  height: 40px;
+  width: 230px;
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  resize: none;
+  font-size: 14px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+textarea:focus {
+  outline:none;
+}
+
+#send {
+  float: left;
+  background-color: #ff9541;
+  width: 60px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.chatbox::-webkit-scrollbar {
+  width: 10px;
+}
+.chatbox::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.chatbox::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+#reset {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#reset:hover {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  width: 50px;
+  margin: 5px;
 }

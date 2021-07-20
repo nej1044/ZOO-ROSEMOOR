@@ -1,79 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Limelight&display=swap" rel="stylesheet">  
-    <title>ROSEMOOR ZOO</title>
-  </head>
 
-  <body>
-    <!-- navbar -->
-    <nav>
-      <a id="logo" href="#">ZOO ROSEMOOR</a>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="js/bootstrap.css">
+  <title>ROSEMOOR ZOO</title>
+</head>
 
-      <ul>
-        <div class="helper"></div>
-        <li><a class="menu" href="#">Home</a></li>
-        <li><a class="menu" href="#">About</a></li>
-        <li><a class="menu" href="#">Services</a></li>
-        <li><a class="menu" href="#">Gallery</a></li>
-        <li><a class="menu" href="#">Codes</a></li>
-        <li><a class="menu" href="#">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- header -->
-    <div id="header">
-      <h1>Welcome to Zootopia</h1>
-      <p>From tiny toads to big cats, there are more than 6,000 species at the Rosemoor Zoo. 
-        <br>Plan a visit to see your favorite member of the animal kingdom and meet some new ones along the way!</p>
-    </div>
-
-    <!-- header info -->
-    <div id="header_container">
-      <div class="header_info">
-        <img class="header_pic" src="images/bird1.jpg">
-        <div class="header_content">
-          <h3>Fantastic Wings</h3>
-          <p>You can see birds in the nature surrounded by trees.
-            Have a special experience in which freely flying birds fly to me.</p>
-        </div>
-      </div>
-
-      <div class="header_info">
-        <img class="header_pic" src="images/lion1.webp">
-        <div class="header_content">
-          <h3>Lion Valley</h3>
-          <p>Lion Valley recreated the habitat of Lions with cool waterfalls, ponds, and birch forests.</p>
-        </div>
-      </div>
-
-      <div class="header_info">
-        <img class="header_pic" src="images/flamingos.jpg">
-        <div class="header_content">
-          <h3>Bird Paradise</h3>
-          <p>Birds of a feather flock paradise.
-            You can see many beautiful birds, including the dancing elegant flamingo, and so on.</p>
-        </div>
-      </div>
-
-      <div class="header_info">
-        <img class="header_pic" src="images/penguins.jpg">
-        <div class="header_content">
-          <h3>Penguin Paradise</h3>
-          <p>Zakas Penguin from South Africa.
-            You can see the penguins with cute gait.
-            With the blue sky at the largest exhibition hall.</p>
-        </div>
+<body>
+  <!-- navbar -->
+  <nav>
+    <a id="logo" href="#">ZOO ROSEMOOR</a>
+    <ul>
+      <div class="helper"></div>
+      <li><a class="menu" href="#">Home</a></li>
+      <li><a class="menu" href="#">About</a></li>
+      <li><a class="menu" href="#">Services</a></li>
+      <li><a class="menu" href="#">Gallery</a></li>
+      <li><a class="menu" href="#">Codes</a></li>
+      <li><a class="menu" href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- header -->
+  <div id="header">
+    <p>Welcome to Zootopia</p>
+    <p>From tiny toads to big cats, there are more than 6,000 species at the Rosemoor Zoo.
+      <br>Plan a visit to see your favorite member of the animal kingdom and meet some new ones along the way!</p>
+  </div>
+  <!-- header info -->
+  <div id="header_container">
+    <div class="header_info">
+      <img class="header_pic" src="images/bird1.jpg">
+      <div class="header_content">
+        <h3>Fantastic Wings</h3>
+        <p>You can see birds in the nature surrounded by trees.
+          Have a special experience in which freely flying birds fly to me.</p>
       </div>
     </div>
-
-    <!-- feature -->
-    <div id="feature">
-
+    <div class="header_info">
+      <img class="header_pic" src="images/lion1.webp">
+      <div class="header_content">
+        <h3>Lion Valley</h3>
+        <p>Lion Valley recreated the habitat of Lions with cool waterfalls, ponds, and birch forests.</p>
+      </div>
     </div>
-  </body>
+    <div class="header_info">
+      <img class="header_pic" src="images/flamingos.jpg">
+      <div class="header_content">
+        <h3>Bird Paradise</h3>
+        <p>Birds of a feather flock paradise.
+          You can see many beautiful birds, including the dancing elegant flamingo, and so on.</p>
+      </div>
+    </div>
+    <div class="header_info">
+      <img class="header_pic" src="images/penguins.jpg">
+      <div class="header_content">
+        <h3>Penguin Paradise</h3>
+        <p>Zakas Penguin from South Africa.
+          You can see the penguins with cute gait.
+          With the blue sky at the largest exhibition hall.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Chatbot -->
+  <img id="chatbot-icon" src="images/chatbot-icon.png">
+  <section id="chatbot">
+    <span id="close">✕</span>
+    <span id="color-change">❊</span>
+    <div id="chatbot-header">
+      <span id="chatbot-header-info">
+        <p>ROSEMOOR ZOO</p>
+        <p>응답시간 빠름⚡</p>
+        <p>보통 몇 분 이내에 응답합니다</p>
+      </span>
+      <img id="profile-img" src="images/profile.png">
+    </div>
+    <div id="chat-container">        
+      <div class="chatbox">
+        <div class="friend-bubble bubble">
+          방문해주셔서 감사합니다 :) 어떻게 도와드릴까요?
+        </div>
+        <div class="friend-bubble bubble">
+          <button id="time-btn">이용 시간</button>
+          <button id="fee-btn">입장 요금</button>
+          <button id="reserve-btn">티켓 예매</button>
+          <button id="clerk-btn">상담원 연결</button>
+        </div>
+      </div>
+      <div class="text-box">
+        <textarea id="new-message" placeholder="메세지를 입력해주세요."></textarea>
+        <button id="send">전송</button>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
-
