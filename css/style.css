@@ -308,18 +308,21 @@ textarea:focus {
 
 #reset {
   display: block;
-  width: 200px;
-  height: 30px;
-  margin: 0 auto;
-  margin-top: 15px;
+  position: fixed;
+  right: 120px;
+  bottom: 130px;
+  width: 40px;
+  height: 40px;
   border: none;
-  border-radius: 10px;
-  background-color: white;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  line-height: 40px;
+  opacity: 50%;
 }
 
 #reset:hover {
-  background-color: black;
-  color: white;
+  opacity: 80%;
 }
 
 a {
