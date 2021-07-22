@@ -120,6 +120,19 @@ nav .menu:hover {
 
 /* chatbot */
 
+#new-chat {
+  display: block;
+  float: left;
+  width: 110px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 #chatbot-icon {
   position: fixed;
   top: 600px;
