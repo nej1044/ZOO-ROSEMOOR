@@ -244,7 +244,7 @@ $('#color-change').on('click', function () {
   }
 })
 
-$('#reset').on('click', function () {
+$('#textbox-top').on('click', function () {
   $('.chatbox').scrollTop(0);
 })
 

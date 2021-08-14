@@ -135,16 +135,16 @@ nav .menu:hover {
 
 #chatbot-icon {
   position: fixed;
-  top: 600px;
-  left: 1400px;
+  bottom: 100px;
+  right: 100px;
   width: 60px;
 }
 
 #chatbot {
   display: inline-block;
   position: fixed;
-  top: 60px;
-  left: 1110px;
+  bottom: 100px;
+  right: 100px;
   width: 350px;
   height: 600px;
   border-radius: 20px;
@@ -319,11 +319,11 @@ textarea:focus {
   box-shadow: inset 0px 0px 5px white;
 }
 
-#reset {
+#textbox-top {
   display: block;
   position: fixed;
-  right: 120px;
-  bottom: 130px;
+  right: 150px;
+  bottom: 160px;
   width: 40px;
   height: 40px;
   border: none;
@@ -334,7 +334,7 @@ textarea:focus {
   opacity: 50%;
 }
 
-#reset:hover {
+#textbox-top:hover {
   opacity: 80%;
 }
 
